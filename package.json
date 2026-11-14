@@ -8,7 +8,7 @@
   "author": "dsh-screenshot contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LISHUANGXI1412/dsh-screen-capture"
+    "url": "git+https://github.com/LISHUANGXI1412/dsh-screen-capture.git"
   },
   "homepage": "https://github.com/LISHUANGXI1412/dsh-screen-capture#readme",
   "bugs": {
