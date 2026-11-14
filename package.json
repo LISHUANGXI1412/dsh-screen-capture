@@ -1,0 +1,66 @@
+{
+  "name": "dsh-screenshot",
+  "version": "0.6.0",
+  "description": "Screenshot for DSH: a composer button that inserts a screen capture into the draft, plus an optional model-facing screenshot tool with a hard ask-before-capture switch.",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "dsh-screenshot contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LISHUANGXI1412/dsh-screenshot"
+  },
+  "homepage": "https://github.com/LISHUANGXI1412/dsh-screenshot#readme",
+  "bugs": {
+    "url": "https://github.com/LISHUANGXI1412/dsh-screenshot/issues"
+  },
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "screenshot",
+    "screen-capture",
+    "composer",
+    "windows",
+    "agent"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/**",
+    "capture.ps1",
+    "select.ps1",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-connection"
+      ]
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-typert-protocol": "0.2.2-rc.1"
+  }
+}
