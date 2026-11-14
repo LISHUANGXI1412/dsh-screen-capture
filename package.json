@@ -1,6 +1,6 @@
 {
   "name": "dsh-screen-capture",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Screenshot for DSH: a composer button that inserts a screen capture into the draft, plus an optional model-facing screenshot tool with a hard ask-before-capture switch.",
   "type": "module",
   "main": "index.js",
