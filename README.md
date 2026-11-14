@@ -1,4 +1,4 @@
-# dsh-screenshot
+# dsh-screen-capture
 
 两个能力，一个插件：
 

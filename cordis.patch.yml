@@ -1,5 +1,5 @@
 - insert:
     - id: screenshot
-      name: dsh-screenshot
+      name: dsh-screen-capture
       config:
         askBeforeCapture: true
